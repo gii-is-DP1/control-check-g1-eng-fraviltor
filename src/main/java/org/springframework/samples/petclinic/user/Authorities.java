@@ -23,6 +23,22 @@ public class Authorities extends BaseEntity{
 	
 	@Size(min = 3, max = 50)
 	String authority;
-	
-	
+
+	//Lombok me funciona mal
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public String getAuthority() {
+		return authority;
+	}
+
+	public void setAuthority(String authority) {
+		this.authority = authority;
+	}
+
 }
